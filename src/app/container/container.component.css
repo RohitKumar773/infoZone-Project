@@ -1,0 +1,74 @@
+.main_container {
+  width: 100%;
+  height: calc(100vh - 76px);
+  float: left;
+  margin-top: 76px;
+  background-position: cover;
+}
+.left_container {
+  width: 50%;
+  height: 100%;
+  float: left;
+  /* background-color: aquamarine; */
+}
+.left_container h1 {
+  font: bold 2.8rem sans-serif;
+  margin: 150px 120px 0px;
+  line-height: 55px;
+}
+.left_container h3 {
+  width: 100%;
+  font: 1rem sans-serif;
+  margin: 50px 120px 0px;
+  float: left;
+}
+.left_container button {
+  width: 150px;
+  float: left;
+  padding: 10px;
+  background-color: rgb(40, 137, 221);
+  color: white;
+  border-radius: 20px;
+  margin-left: 110px;
+  margin-top: 50px;
+}
+.right_container {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 120px 40px;
+  /* background-color: aqua; */
+}
+.right_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#navigate_information {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.title{
+  width: 100%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  font: 1.5rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info_boxes{
+    width: 80%;
+    height: 80px;
+    float: left;
+    margin: 2% 10% 0%;
+    background-color: rgba(220, 200, 229, 0.128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 1.1rem sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
