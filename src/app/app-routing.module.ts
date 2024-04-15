@@ -9,6 +9,12 @@ import { SpaceComponent } from './space/space.component';
 import { CountryComponent } from './country/country.component';
 import { CompanyComponent } from './company/company.component';
 import { CollegeComponent } from './college/college.component';
+import { PersonContentAreaComponent } from './person-content-area/person-content-area.component';
+import { SpaceContentAreaComponent } from './space-content-area/space-content-area.component';
+import { CountryContentAreaComponent } from './country-content-area/country-content-area.component';
+import { CompanyContentAreaComponent } from './company-content-area/company-content-area.component';
+import { CollegeContentAreaComponent } from './college-content-area/college-content-area.component';
+import { TechContentAreaComponent } from './tech-content-area/tech-content-area.component';
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
@@ -20,6 +26,12 @@ const routes: Routes = [
   { path: 'country', component: CountryComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'college', component: CollegeComponent },
+  { path: 'person_content', component: PersonContentAreaComponent },
+  { path: 'country_content', component: CountryContentAreaComponent },
+  { path: 'company_content', component: CompanyContentAreaComponent },
+  { path: 'space_content', component: SpaceContentAreaComponent },
+  { path: 'university_content', component: CollegeContentAreaComponent },
+  { path: 'tech_content', component: TechContentAreaComponent },
   { path: '**', component: HomepageComponent },
 ];
 

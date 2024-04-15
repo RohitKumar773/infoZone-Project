@@ -5,6 +5,7 @@ header {
   background-color: white;
   box-shadow: 2px 2px 4px rgb(224, 224, 224);
   position: fixed;
+  z-index: 10;
 }
 #logo_area {
   width: 25%;
@@ -54,4 +55,49 @@ header {
 }
 .cool-link:hover::after {
   width: 100%;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+.offcanvas-body button {
+  width: 100%;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.offcanvas-body {
+  background: linear-gradient(to top, #5da3c9, #7c80ce);
+}
+
+.offcanvas-header {
+  background: linear-gradient(to bottom, #7c80ce, #7c80ce);
+  color: white;
+}
+
+.btn-close {
+  color: white;
+}
+
+/* Media query start from here */
+
+@media(max-width:1100px) and (min-width:0px) {
+  #menu_area ul li {
+      display: none;
+  }
+
+  #mobile_menu {
+      display: block;
+  }
+
+  button mat-icon {
+      width: auto;
+      height: auto;
+      font-size: 30px;
+  }
+  #logo_area{
+    padding: 8px;
+  }
 }

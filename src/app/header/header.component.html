@@ -3,7 +3,7 @@
         <img src="assets/infozonelgo.png" alt="">
     </div>
     <div id="menu_area">
-        
+
         <ul>
             <li class="cool-link" routerLink="/homepage" routerLinkActive="active" (click)="onWindowScroll()">
                 Home
@@ -32,6 +32,48 @@
             <li class="cool-link" routerLink="/contact" routerLinkActive="active" (click)="onWindowScroll()">
                 Contact
             </li>
+
+
+            <button mat-button data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop" id="mobile_menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="staticBackdropLabel">Menu</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <button mat-button (click)="onWindowScroll()" routerLink="/homepage" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Home</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/about" data-bs-dismiss="offcanvas"
+                        aria-label="Close">About</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/person"
+                        data-bs-dismiss="offcanvas" aria-label="Close">Person</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/country"
+                        data-bs-dismiss="offcanvas" aria-label="Close">Countries</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/company" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Companies</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/college"
+                        data-bs-dismiss="offcanvas" aria-label="Close">Colleges</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/techs"
+                        data-bs-dismiss="offcanvas" aria-label="Close">Techs</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/space"
+                        data-bs-dismiss="offcanvas" aria-label="Close">Space</button>
+
+                    <button mat-button (click)="onWindowScroll()" routerLink="/contact" data-bs-dismiss="offcanvas"
+                        aria-label="Close">Contact</button>
+                </div>
+            </div>
+
         </ul>
 
     </div>

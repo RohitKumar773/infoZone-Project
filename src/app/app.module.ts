@@ -18,9 +18,19 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ViewportComponent } from './viewport/viewport.component';
 import { ContainerComponent } from './container/container.component';
 
+import { CollegeComponent } from './college/college.component';
+import { TechContentAreaComponent } from './tech-content-area/tech-content-area.component';
+import { SpaceContentAreaComponent } from './space-content-area/space-content-area.component';
+import { PersonContentAreaComponent } from './person-content-area/person-content-area.component';
+import { CountryContentAreaComponent } from './country-content-area/country-content-area.component';
+import { CompanyContentAreaComponent } from './company-content-area/company-content-area.component';
+import { CollegeContentAreaComponent } from './college-content-area/college-content-area.component';
+
 // Angular material used
 import { MatButtonModule } from '@angular/material/button';
-import { CollegeComponent } from './college/college.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -38,6 +48,12 @@ import { CollegeComponent } from './college/college.component';
     ViewportComponent,
     ContainerComponent,
     CollegeComponent,
+    TechContentAreaComponent,
+    SpaceContentAreaComponent,
+    PersonContentAreaComponent,
+    CountryContentAreaComponent,
+    CompanyContentAreaComponent,
+    CollegeContentAreaComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +61,9 @@ import { CollegeComponent } from './college/college.component';
     BrowserAnimationsModule,
     NgbModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

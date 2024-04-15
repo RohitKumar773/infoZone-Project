@@ -19,3 +19,19 @@ footer{
     font: 1rem sans-serif;
     cursor: pointer;
 }
+
+@media(max-width:500px) and (min-width:0px){
+    footer{
+        height: 150px;
+    }
+    #links{
+        height: 100px;
+    }
+    .footer_boxes{
+        flex-direction: column;
+    }
+    .footer_boxes ul li{
+        margin-left: 30px;
+        line-height: 40px;
+    }
+}

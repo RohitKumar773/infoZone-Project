@@ -1,79 +1,120 @@
 .main_content_area {
-    width: 100%;
-    height: auto;
-    float: left;
-    margin-top: 76px;
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 76px;
+}
+.content_title {
+  width: 100%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  font: 1.5rem "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 55px;
+}
+.search_box {
+  width: 100%;
+  height: 80px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_box input {
+  width: 80%;
+  padding: 15px;
+  border: 1px solid silver;
+  outline: none;
+  border-radius: 0.5rem;
+  font: 1rem sans-serif;
+}
+.content_box_area {
+  width: calc(100% - 6%);
+  height: calc(100% - 140px);
+  float: left;
+  margin-top: 50px;
+  margin-left: 3%;
+}
+.content_box {
+  width: 32%;
+  height: 90px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.612);
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 1rem;
+  transition: 0.4s;
+  border: 1px solid silver;
+  padding: 9px;
+}
+.content_box .img_area {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  float: left;
+  overflow: hidden;
+}
+.img_area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  filter: brightness(1.4);
+}
+.content_box .title_area {
+  width: auto;
+  height: 100%;
+  float: left;
+  font: 600 1.3rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  line-height: 30px;
+}
+.title_area p {
+  font: 0.8rem sans-serif;
+  color: rgb(91, 91, 91);
+}
+
+
+/* media query start from here  */
+
+@media(max-width:1000px) and (min-width:0px){
+  .search_box input{
+    width: 90%;
   }
-  .content_title {
-    width: 100%;
-    height: 60px;
-    float: left;
-    text-align: center;
-    font: 1.5rem "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    line-height: 55px;
+  .content_box_area{
+    margin-top: 30px;
   }
-  .search_box {
-    width: 100%;
-    height: 80px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .search_box input {
-    width: 80%;
-    padding: 15px;
-    border: 1px solid silver;
-    outline: none;
-    border-radius: 0.5rem;
-    font: 1rem sans-serif;
-  }
-  .content_box_area {
-    width: calc(100% - 6%);
-    height: calc(100% - 140px);
-    float: left;
-    margin-top: 50px;
+  .content_box{
+    width: 46%;
     margin-left: 3%;
+    padding: 15px;
   }
-  .content_box {
-    width: 32%;
-    height: 90px;
-    float: left;
-    background-color: rgba(227, 227, 227, 0.612);
-    margin-left: 1%;
-    margin-top: 1%;
-    border-radius: 1rem;
-    transition: 0.4s;
-    padding: 9px;
+  .content_box .img_area{
+    width: 60px;
+    height: 60px;
   }
-  .content_box:hover {
-    transform: scale(1.04);
-    cursor: pointer;
+  .content_box .title_area{
+    font: 600 1.1rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-  .content_box .img_area {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    float: left;
-    overflow: hidden;
+  .title_area p{
+    font: 0.7rem sans-serif;
   }
-  .img_area img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    filter: brightness(1.4);
+}
+
+@media(max-width:600px) and (min-width:0px){
+  .search_box input{
+    width: 84%;
   }
-  .content_box .title_area {
-    width: auto;
-    height: 100%;
-    float: left;
-    font: 600 1.3rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    line-height: 30px;
+  .content_box_area{
+    margin-top: 20px;
   }
-  .title_area p {
-    font: 0.8rem sans-serif;
-    color: rgb(91, 91, 91);
+  .content_title{
+    font: 1.3rem "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    line-height: 80px;
   }
-  
+  .content_box{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+}
